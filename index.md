@@ -16,4 +16,14 @@
 
 ## Results
 
+## Conclusion
+
+[Code](./Code.md)
+
+[Schematics](./Schematics.md)
+
+[Tasks](./Tasks.md)
+
+[References](./References.md)
+
 [Appendix A](./AppendixA.md)
