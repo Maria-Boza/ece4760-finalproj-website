@@ -22,12 +22,12 @@ This project was worked on by Maria Boza (mib57) Anya Prabowo (afp65) Eshita San
 
 ## Appendix Links
 
-[Code](./Code.md)
+[Code](./code.md)
 
-[Schematics](./Schematics.md)
+[Schematics](./schematics.md)
 
-[Tasks](./Tasks.md)
+[Tasks](./tasks.md)
 
-[References](./References.md)
+[References](./references.md)
 
-[Appendix A](./AppendixA.md)
+[Appendix A](./appendixA.md)
