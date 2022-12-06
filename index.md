@@ -16,4 +16,4 @@
 
 ## Results
 
-[Appendix A](./AppendixA.md)
+[Appendix A](./Appendix A.md)
