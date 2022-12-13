@@ -21,10 +21,21 @@ The second part of our project was the camera module. We used the Arducam camera
 
 
 ## Hardware Design
+* Raspberry Pi Pico / RP2040
+
+The RP2040 is a high-performance microcontroller device with interfaces such as GPIO, ADC, and SPI flashing. It is responsible for flashing our programs in conjunction with the different peripheral devices. 	
+
+* USB Serial Port
+
+The serial port  is connected to the Raspberry Pi Pico that outputs values to an external computer. It was used to receive user input of the .bmp file. 
+
+* Video Graphics Array (VGA)
+
+The VGA is a display that is used to display the boids and the motion as well as the bounds. The VGA runs with 6 pins: VSYNC, HSYNC, BLUE, GREEN, RED, and Ground. Once the writing image goes through compression and the pico determines what letter it is then it will display the writing that was compressed image of the handwriting as well as what the algorithm determines the letter is.
 
 * Decoder
 
-    To be able to have a grey scale on the vga we created a decoder to send in the same voltage to all the red green blue pins. The decoder consisted of 3 different resistors that were connected in series with each other and output the voltage value to the VGA screen. The reason why we wanted a grey scale was because all of our images are black and white but when we compress the image to a smaller one that the algorithm uses we wanted to show the compression in grey scale. Here you can find the (#1) [schematic](./schematics.md).
+To be able to have a grey scale on the vga we created a decoder to send in the same voltage to all the red green blue pins. The decoder consisted of 3 different resistors that were connected in series with each other and output the voltage value to the VGA screen. The reason why we wanted a grey scale was because all of our images are black and white but when we compress the image to a smaller one that the algorithm uses we wanted to show the compression in grey scale. Here you can find the (#1) [schematic](./schematics.md).
 
 
 ## Results
