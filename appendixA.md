@@ -1,3 +1,5 @@
+[Home](./index.md)
+
 # Appendix A
 The group approves this report for inclusion on the course website.
 
