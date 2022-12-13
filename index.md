@@ -32,6 +32,12 @@ The second part of our project was the camera module. We used the Arducam camera
 
 ## Conclusion
 
+<iframe width="560" height="315" 
+src="[https://www.youtube.com/embed/MUQfKFzIOeU](https://www.youtube.com/watch?v=teCES6Atgzo&t=35s&ab_channel=HunterAdams)"  
+frameborder="0"  
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  
+allowfullscreen></iframe> 
+
 ## Appendix Links
 
 [Code](./code.md)
