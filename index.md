@@ -1,4 +1,4 @@
-# Welcome to our handwritting recognition project.
+# Handwritting Recognition Project.
 
 This project was worked on by Maria Boza (mib57) Anya Prabowo (afp65) Eshita Sangani (ens57)
 
