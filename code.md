@@ -4,6 +4,7 @@
 
 ## Digitrec
 
+'''
 // Include necessary libraries
 #include <stdio.h>
 #include <stdlib.h>
@@ -37,3 +38,4 @@
 // Initialize global variables
 char num[NUM_VAL][3];      // Array of pixels in chars/strings
 int  count[NUM_VAL];       // Number of chars per pixel e.g. 255 has 3 chars
+'''
