@@ -59,7 +59,7 @@ The VGA is a display that is used to display the compression array in greyscale 
 
 * Decoder
 
-To be able to have a grey scale on the VGA we created a decoder to send in the same voltage to all the red green blue pins. The decoder consisted of 3 different resistors that were connected in series with each other and output the voltage value to the VGA screen. The reason why we wanted a grey scale was because all of our images are black and white but when we compress the image to a smaller one that the algorithm uses we wanted to show the compression in a grey scale. Here you can find the (#1) [schematic](./schematics.md). If  we were to stay with RGB values from the original voltages you can see it in (#2) [schematic](./schematics.md).
+To be able to have a grey scale on the VGA we created a decoder to send in the same voltage to all the red green blue pins. The decoder consisted of 3 different resistors that were connected in series with each other and output the voltage value to the VGA screen. The reason why we wanted a grey scale was because all of our images are black and white but when we compress the image to a smaller one that the algorithm uses we wanted to show the compression in a grey scale. Here you can find the (#1) [schematic](./schematics.md). You can see an example of the grey scale in (#2) [schematic](./schematics.md).
 
 
 ## Results
