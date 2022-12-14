@@ -7,3 +7,4 @@ for file in *.md
     # --gfm == use github flavoured markdown
     marked -o pages/$file.html $file --gfm
 done
+
