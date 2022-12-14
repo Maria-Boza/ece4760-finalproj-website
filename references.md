@@ -8,3 +8,4 @@
 
 [Pico Datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)
 
+[Camera Repo](https://github.com/ArduCAM/RPI-Pico-Cam/tree/master/rp2040_hm01b0)
