@@ -8,7 +8,4 @@
 
 ### 2. Grey Scale representation
 
-![69162735516__D6459CAD-5B67-49FF-9CD7-AD074FC24BA0](https://user-images.githubusercontent.com/115089567/207473672-d59f1a7e-c546-4e4a-a267-6aeeaa8e9d48.jpeg)
-
-
 <img width="395" alt="image" src="https://user-images.githubusercontent.com/115089567/207473931-92d19af9-dc89-4c14-8e73-7a8b8edc473f.png">
