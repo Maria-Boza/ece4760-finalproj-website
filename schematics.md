@@ -9,3 +9,6 @@
 ### 2. Grey Scale representation
 
 <img width="395" alt="image" src="https://user-images.githubusercontent.com/115089567/207473931-92d19af9-dc89-4c14-8e73-7a8b8edc473f.png">
+
+### 3. Camera Pinout
+<img width="496" alt="image" src="https://user-images.githubusercontent.com/115089567/207474662-67e777a4-4dec-4acc-a3b6-597a37f13b95.png">
