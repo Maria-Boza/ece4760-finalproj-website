@@ -12,3 +12,11 @@
 
 ### 3. Camera Pinout
 <img width="496" alt="image" src="https://user-images.githubusercontent.com/115089567/207474662-67e777a4-4dec-4acc-a3b6-597a37f13b95.png">
+
+### 4. Digit Recognition
+
+<img width="477" alt="image" src="https://user-images.githubusercontent.com/115089567/207487078-49cae85a-145a-40ec-91e8-0e6d8ded4ab7.png">
+
+### 5. Letter Recognition
+
+<img width="474" alt="image" src="https://user-images.githubusercontent.com/115089567/207487142-03c722c5-15be-438a-bab6-fe605a5f092d.png">
