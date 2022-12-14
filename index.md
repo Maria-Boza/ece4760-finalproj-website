@@ -45,6 +45,7 @@ Once we receive the entire array for an image, this is first displayed on the VG
 
 The knn algorithm has 2 main functions: the update function, and the vote function. The update function loops through each training data (100 images per character) and determines the k smallest euclidean distances between our input image and each character in our training set. Once this array is achieved, the vote function will determine which are the k smallest distances, and which character corresponds to the majority of these smallest distances. This is what is printed as the “Predicted Character” on the VGA display.
 
+
 **An Image of the predicted character r.**
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/115089567/207496170-8c1e69a6-0373-42b9-8dd8-06e7731e26f0.png">
 
