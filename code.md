@@ -2,6 +2,12 @@
 
 # Code
 
+<style type="text/css">
+  .gist {width:700px !important;}
+  .gist-file
+  .gist-data {max-height: 500px;max-width: 700px;}
+</style>
+
 ## Digitrec
 <script src="https://gist.github.com/anyafp/6e9141961e8b53967ab79ba075e4f0c0.js"></script>
 
