@@ -52,7 +52,7 @@ The knn algorithm has 2 main functions: the update function, and the vote functi
 
 * Camera
 
-Most of the camera code was obtained from this [repo](https://github.com/ArduCAM/RPI-Pico-Cam/tree/master/rp2040_hm01b0). The main program sets up the camera, GPIO pins and UART, before calling the thread that gets the image and sends it via UART to the Processing application that displays it. Modification was made to pause the camera output when the button is held down, and to the CMake files to ensure that we could integrate the class protothread header files, which can be found in the code snippet section.
+Most of the camera code was obtained from this [repo](https://github.com/ArduCAM/RPI-Pico-Cam/tree/master/rp2040_hm01b0). The main program sets up the camera, GPIO pins and UART, before calling the thread that gets the image and sends it via UART to the Processing application that displays it. Modification was made to pause the camera output when the button is held down, and to the CMake files to ensure that we could integrate the class protothread header files, which can be found in the [code](./code.md) snippet section.
 
 **The following is what the camera was able to display.**
 
