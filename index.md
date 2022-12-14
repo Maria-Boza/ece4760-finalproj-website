@@ -19,6 +19,29 @@ The second part of our project was the camera module. We used the Arducam camera
 
 ## Program Design
 
+* Python
+
+Before sending data to the Pico, we first wrote a Python script to take an image in a bitmap format, get the pixel data in a 28x28 array format, and send this data over via UART to the Pico. The integers need to be sent as characters as the Pico only receives characters using the uart_getc function. The integers were sent in a for loop over the 28x28 array obtained from the bitmap image. Because we use a compressed image, we want to be able to retain as much pixel information as possible, and retained the grayscale of the image (instead of a black and white image).
+
+Initially, we had been taking images in 28x28 size, and getting the pixel data directly. However, it would be convenient for the user to be able to draw on a larger canvas and still obtain an image suitable for the algorithm. As a result, we wanted to be able to compress images of any size (but still of square dimensions) to get a 28x28 size image. In order to do this, we needed to resize the image from any larger sized image down to a 28x28 image using the resize function from the Python Pillow library that we also use to get the pixel data from bitmap images.
+
+An issue we faced was the fact that the Pico would only receive one character at a time. When initially testing the system, this would work with numbers 0 - 9. However, for numbers with two or three digits (i.e. 74 or 138), these would be sent one digit at a time (i.e. 74 would be sent as a 7, then a 4). This was an issue as, on the Pico side, we would serially read over UART 784 times for each integer we expect to receive and now, we don’t have a fixed number of characters to receive since the value of each pixel is variable depending on the drawing. To combat this problem, we sent two sets of data: the number of characters per integer, and the integers themselves, as shown below:
+
+
+This data would be alternatively sent, with count of index i being sent before image of index i. As a result, when the Pico receives this information, it can use the count data to determine how many uart_getc function calls it needs to read one integer from Python.
+
+* Pico
+
+The Pico receives the data and reads both the count data and image data. For each count data, this is converted to an integer and for this integer value, we loop through to read each character of the image integer based on the count value.
+
+Once we receive the entire array for an image, this is first displayed on the VGA screen to show the user the image they had just drawn. Each pixel from the image is a 10x10 rectangle on the VGA screen, and the value of the pixel color is split between one of the 6 possible greyscale values, based on its range from 0 - 255. After this is displayed, the array is used in the knn algorithm.
+
+The knn algorithm has 2 main functions: the update function, and the vote function. The update function loops through each training data (100 images per character) and determines the k smallest euclidean distances between our input image and each character in our training set. Once this array is achieved, the vote function will determine which are the k smallest distances, and which character corresponds to the majority of these smallest distances. This is what is printed as the “Predicted Character” on the VGA display.
+
+* Camera
+
+Most of the camera code was obtained from this [repo](https://github.com/ArduCAM/RPI-Pico-Cam/tree/master/rp2040_hm01b0). The main program sets up the camera, GPIO pins and UART, before calling the thread that gets the image and sends it via UART to the Processing application that displays it. Modification was made to pause the camera output when the button is held down, and to the CMake files to ensure that we could integrate the class protothread header files, which can be found in the code snippet section.
+
 
 ## Hardware Design
 * Raspberry Pi Pico / RP2040
