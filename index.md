@@ -47,6 +47,8 @@ The knn algorithm has 2 main functions: the update function, and the vote functi
 
 
 **An Image of the predicted character r.**
+
+
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/115089567/207496170-8c1e69a6-0373-42b9-8dd8-06e7731e26f0.png">
 
 
