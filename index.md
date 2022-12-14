@@ -47,7 +47,7 @@ Most of the camera code was obtained from this [repo](https://github.com/ArduCAM
 ## Hardware Design
 * Raspberry Pi Pico / RP2040
 
-The RP2040 is a high-performance microcontroller device with interfaces such as GPIO, ADC, and SPI flashing. It is responsible for flashing our programs in conjunction with the different peripheral devices. 	
+The RP2040 is a high-performance microcontroller device with interfaces such as GPIO, ADC, and SPI flash. It is responsible for flashing our programs in conjunction with the different peripheral devices. 	
 
 * USB Serial Port
 
